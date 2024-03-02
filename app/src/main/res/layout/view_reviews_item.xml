@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clipToPadding="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile_picture_review_card_view"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="30dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:id="@+id/profile_picture_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_profile_placeholder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/nickname_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="@dimen/_15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple"
+                    app:layout_constraintStart_toEndOf="@+id/profile_picture_review_card_view"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="neil.the.navy.seal"/>
+
+                <TextView
+                    android:id="@+id/rate_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="@dimen/_15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple"
+                    app:layout_constraintEnd_toStartOf="@+id/star_id"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="3"/>
+
+                <ImageView
+                    android:id="@+id/star_id"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/baseline_star_rate_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/comment_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/_15sp"
+                android:textColor="@color/black"
+                tools:text="This show was a complete masterpiece, I really liked it."/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

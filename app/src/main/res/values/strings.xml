@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Shows</string>
+    <string name="login">Login</string>
+    <string name="text_login_activity">In order to continue please log in.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="delete_show">Delete show</string>
+    <string name="shows">Shows</string>
+    <string name="hide_show">Hide</string>
+    <string name="show_desc">The Office is an American mockumentary sitcom television series that depicts the everyday work lives of office employees in the Scranton, Pennsylvania, branch of the fictional Dunder Mifflin Paper Company. It aired on NBC from March 24, 2005, to May 16, 2013, lasting a total of nine seasons.</string>
+    <string name="show_button">show</string>
+    <string name="shows_not_showing">Your shows are not showing. Get it?</string>
+    <string name="reviews">Reviews</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="no_reviews_yet">No reviews yet.</string>
+    <string name="alert_dialog_title">New review</string>
+    <string name="alert_dialog_message_review">Are you sure you want to add a new review?</string>
+    <string name="add">add\n</string>
+    <string name="cancel">cancel\n</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_out">Logout</string>
+    <string name="comment">Comment</string>
+    <string name="submit">submit</string>
+    <string name="remember_me">Remember me</string>
+    <string name="change_profile_photo">Change profile photo</string>
+    <string name="areUSureUWantToLogOut">Are u sure u want to log out?</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
+    <string name="ChangeProfilePhoto">Change profile photo</string>
+    <string name="fromGalleryOrTakeAPicture">Select from gallery or take a new picture.\n</string>
+    <string name="Galleryy">Gallery\n</string>
+    <string name="TakeAPicture">Take a picture\n</string>
+    <string name="register">Register</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="registration_successful">Registration successful!</string>
+</resources>

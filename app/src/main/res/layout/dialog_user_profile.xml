@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="124dp"
+            app:cardBackgroundColor="@color/purpleColor_2"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/userProfilePicture"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_placeholder"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userProfilePicture"
+            tools:text="marijaa+10@hotmail.com"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/changeProfilePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/change_profile_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/purpleColor_2"
+            android:backgroundTint="@color/white"
+            android:padding="15dp"
+            android:textStyle="bold"
+            app:cornerRadius="40dp"
+            app:layout_constraintTop_toBottomOf="@id/userEmail"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/log_out"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:backgroundTint="@color/purpleColor_2"
+            android:textStyle="bold"
+            app:cornerRadius="40dp"
+            app:layout_constraintTop_toBottomOf="@id/changeProfilePhoto"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
